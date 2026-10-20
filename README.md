@@ -1,54 +1,7 @@
-# NVIDIA Nemotron Reasoning LoRA Experiments
+# Nemotron Reasoning
 
-Public-safe summary of NVIDIA Nemotron Model Reasoning Challenge experiments.
+프로젝트 설명을 **[통합 프로젝트 노트](https://github.com/bgw4399/bgw4399/blob/main/docs/projects/nvidia-nemotron-reasoning.md)**로 옮겼습니다.
 
-## Overview
+LoRA adapter, verifier, 오류 유형 분석 실험 노트.
 
-This project explores LoRA/PEFT adapter strategies for a reasoning-model Kaggle challenge. The work focuses on verifier audits, failure taxonomy, independent model-family discovery, adapter diversity, and model merging rather than small single-parameter tweaks.
-
-## Problem Structure
-
-The challenge includes reasoning families such as:
-
-- Bit Manipulation
-- Equation Transformation
-- Gravitational Constant
-- Numeral Conversion
-- Text Encryption
-- Unit Conversion
-
-Local audits showed that Equation Transformation was the main bottleneck, while Text Encryption and Numeral Conversion had stronger rule/verifier coverage.
-
-## What Was Built
-
-- Baseline and champion adapter integrity audits
-- Failure taxonomy and verifier coverage analysis
-- D4 numeric equation solver audit
-- Candidate diversity audit for LoRA adapters
-- TIES/DARE/model-soup experimentation plan
-- Public-score tracking notebooks and submission packaging checks
-
-## Notable Local Audit Result
-
-The D4 numeric equation solver audit selected 68 exact rows with 0 wrong rows in the local audit, giving selected precision of 1.0. This was used as a safe candidate signal rather than blindly adding noisy rows.
-
-## Methods Explored
-
-- LoRA/PEFT adapter submission packaging
-- Solver repair and preserve SFT
-- Verifier-filtered training data
-- Adapter diversity analysis
-- TIES/DARE/model soup
-- Independent trained-adapter family acquisition
-- Paper-inspired candidate diversity strategies
-
-## Public Sharing Notes
-
-Do not upload:
-
-- Kaggle input data if redistribution is restricted
-- model weights or submission zips unless allowed
-- private leaderboard logs or credentials
-- downloaded external models with unclear license
-
-Upload only notebooks/scripts that are safe to share and include enough explanation for reproducibility.
+이 저장소는 기존 링크를 위한 안내 페이지입니다. 실행 코드와 원본 데이터는 포함하지 않습니다.
